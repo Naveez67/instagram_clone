@@ -57,15 +57,8 @@ group :development, :test do
 end
 
 group :development do
-  
-  # gem 'capistrano'
-  # gem 'capistrano-bundler'
-  # gem 'capistrano-passenger', '>= 0.1.1'
-  # gem 'capistrano-rails'
-  # gem 'capistrano-rvm'
-  # gem 'capistrano-figaro-yml', '~> 1.0.2'
   gem 'capistrano' 
-  gem 'capistrano3-puma' 
+  gem 'capistrano3-puma'
   gem 'capistrano-rails'
   gem 'capistrano-bundler'
   gem 'capistrano-rbenv'
