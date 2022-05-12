@@ -65,7 +65,7 @@ set :ssh_options, {
 #     auth_methods: %w(publickey password)
 #     # password: "please use keys"
 #   }
-set :application, "INSTAGRAM-MAIN"
+set :application, "myapp"
 set :repo_url, "github.com/Naveez67/instagram_clone.git"
 set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system', 'public/uploads')
 set :rvm_ruby_version, '2.7.2'

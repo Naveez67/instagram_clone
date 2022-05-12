@@ -50,6 +50,7 @@ gem 'whenever', require: false
 # gem 'thinking-sphinx'
 gem 'cloudinary'
 gem 'pg_search'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
@@ -57,12 +58,17 @@ end
 
 group :development do
   
-  gem 'capistrano'
-  gem 'capistrano-bundler'
-  gem 'capistrano-passenger', '>= 0.1.1'
+  # gem 'capistrano'
+  # gem 'capistrano-bundler'
+  # gem 'capistrano-passenger', '>= 0.1.1'
+  # gem 'capistrano-rails'
+  # gem 'capistrano-rvm'
+  # gem 'capistrano-figaro-yml', '~> 1.0.2'
+  gem 'capistrano' 
+  gem 'capistrano3-puma' 
   gem 'capistrano-rails'
-  gem 'capistrano-rvm'
-  gem 'capistrano-figaro-yml', '~> 1.0.2'
+  gem 'capistrano-bundler'
+  gem 'capistrano-rbenv'
   gem 'listen', '>= 3.0.5', '< 3.2'
   gem 'web-console', '>= 3.3.0'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
@@ -80,3 +86,4 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
+gem 'unicorn'
